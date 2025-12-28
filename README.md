@@ -51,10 +51,12 @@ Stripe-Payment-Integration/
 ├── package-lock.json  # Dependency lock file
 ├── .gitignore         # Ignored files
 └── README.md          # Project documentation
-⚙️ Setup Instructions
-1️⃣ Clone the Repository
-bash
-Copy code
+
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/Monicram/Stripe-Payment-Integration.git
 cd Stripe-Payment-Integration
 2️⃣ Install Dependencies
@@ -73,9 +75,9 @@ STRIPE_SECRET_KEY=sk_test_your_secret_key_here
 bash
 Copy code
 node server.js
-Open your browser and visit:
+Open your browser:
 
-arduino
+text
 Copy code
 http://localhost:4242
 🧪 Test Card Details (Stripe)
@@ -86,13 +88,13 @@ CVV	Any 3 digits
 ZIP	Any
 
 📊 Stripe Dashboard
-Track all test transactions here:
+View test payments here:
 👉 https://dashboard.stripe.com/test/payments
 
 🔐 Security Best Practices
-✔️ API keys stored using environment variables
-✔️ Payment logic handled only on backend
-✔️ Stripe-hosted checkout ensures PCI compliance
+✔ API keys stored using environment variables
+✔ Payment logic handled only on backend
+✔ Stripe-hosted checkout ensures PCI compliance
 
 🎯 Use Cases
 E-commerce checkout
@@ -106,15 +108,17 @@ SaaS payment gateway
 Academic / resume projects
 
 🤝 Contributing
-Pull requests are welcome!
-Feel free to fork this repository and improve it.
+Pull requests are welcome.
+Feel free to fork and improve the project.
 
 ⭐ Support
-If you found this helpful:
+If you like this project:
 
-⭐ Star the repository
+⭐ Star the repo
 
 🍴 Fork it
 
 📢 Share it
 
+sql
+Copy code
