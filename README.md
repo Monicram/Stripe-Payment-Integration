@@ -42,7 +42,7 @@
 
 ## 📁 Project Structure
 
-```bash
+
 Stripe-Payment-Integration/
 │
 ├── server.js          # Express backend & Stripe logic
@@ -52,7 +52,7 @@ Stripe-Payment-Integration/
 ├── .gitignore         # Ignored files
 └── README.md          # Project documentation
 
-'''bash
+
 
 ⚙️ Setup Instructions
 1️⃣ Clone the Repository
