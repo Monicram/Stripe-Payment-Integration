@@ -1,231 +1,126 @@
-💳 Stripe Payment Integration – Complete Dashboard & Integration Guide
-https://via.placeholder.com/800x400/6772E5/FFFFFF?text=Stripe+Payment+Gateway+Dashboard
+<!-- ========================= -->
+<!-- 🌈 STRIPE PAYMENT README -->
+<!-- ========================= -->
 
-🚀 Overview
-A fully functional Stripe Payment Gateway Integration with a modern dashboard, real-time transaction tracking, and seamless payment processing. This project includes both frontend and backend implementation for accepting payments securely using Stripe's API.
+<h1 align="center">💳 Stripe Payment Integration</h1>
 
-✨ Key Features
-✅ Secure Payment Processing – PCI-DSS compliant via Stripe
+<p align="center">
+  <img src="https://img.shields.io/badge/Stripe-Payments-blueviolet?style=for-the-badge&logo=stripe" />
+  <img src="https://img.shields.io/badge/Node.js-Backend-green?style=for-the-badge&logo=node.js" />
+  <img src="https://img.shields.io/badge/Express.js-Framework-black?style=for-the-badge&logo=express" />
+  <img src="https://img.shields.io/badge/Test_Mode-Secure-success?style=for-the-badge" />
+</p>
 
-📊 Real-time Dashboard – Visual analytics & transaction monitoring
+<p align="center">
+  🚀 A secure and beginner-friendly Stripe Checkout integration using Node.js and Express.
+</p>
 
-🔔 Webhook Support – Instant payment status updates
+---
 
-📱 Responsive Design – Works on all devices
+## ✨ Features
 
-🔐 Environment Security – Protected API keys
+- ✅ Secure Stripe Checkout Session  
+- ✅ Backend-only secret key protection  
+- ✅ Environment variable based configuration  
+- ✅ Real-time payment tracking via Stripe Dashboard  
+- ✅ Simple frontend using HTML  
+- ✅ Clean & minimal project structure  
 
-📄 Receipt Generation – Automatic customer receipts
+---
 
-🌐 Multi-currency Support – Accept payments globally
+## 🛠️ Tech Stack
 
-📁 Project Structure
-text
+| Technology | Purpose |
+|----------|--------|
+| 💳 Stripe API | Payment processing |
+| 🟢 Node.js | Backend runtime |
+| ⚡ Express.js | Web framework |
+| 🌐 HTML | Frontend UI |
+| 🔐 dotenv | Secure API key handling |
+
+---
+
+## 📁 Project Structure
+
+```bash
 Stripe-Payment-Integration/
 │
-├── 📄 index.html          # Main checkout page
-├── 📄 server.js           # Backend Express server
-├── 📄 package.json        # Dependencies
-├── 📄 package-lock.json   # Lock file
-├── 📄 .gitignore          # Git ignore rules
-├── 📄 README.md           # This file
-└── 📁 Screenshots/        # Dashboard & UI screenshots
-    ├── dashboard-1.png
-    ├── payment-flow.png
-    ├── success-page.png
-    └── admin-panel.png
-🛠️ Installation & Setup
-1. Clone the Repository
-bash
-git clone https://github.com/yourusername/Stripe-Payment-Integration.git
+├── server.js          # Express backend & Stripe logic
+├── index.html         # Frontend checkout page
+├── package.json       # Dependencies & scripts
+├── package-lock.json  # Dependency lock file
+├── .gitignore         # Ignored files
+└── README.md          # Project documentation
+
+---
+
+⚙️ Setup Instructions
+1️⃣ Clone the Repository
+git clone https://github.com/Monicram/Stripe-Payment-Integration.git
 cd Stripe-Payment-Integration
-2. Install Dependencies
-bash
+
+2️⃣ Install Dependencies
 npm install
-3. Configure Environment Variables
+
+3️⃣ Add Environment Variables
+
 Create a .env file in the root directory:
 
-env
-STRIPE_SECRET_KEY=sk_live_your_secret_key_here
-STRIPE_PUBLISHABLE_KEY=pk_live_your_publishable_key_here
-WEBHOOK_SECRET=whsec_your_webhook_secret
-PORT=3000
-NODE_ENV=production
-4. Start the Server
-bash
-npm start
-# or for development
-npm run dev
-🎨 Dashboard Preview
-📈 Transaction Overview
-![Transaction Dashboard](C:\Users\monic\Downloads\Stripe Payment Gateway\Screenshots\dashboard-overview.png)
-Real-time visualization of payment metrics and revenue trends
+STRIPE_SECRET_KEY=sk_test_your_secret_key_here
 
-🔄 Payment Flow
-![Payment Process](C:\Users\monic\Downloads\Stripe Payment Gateway\Screenshots\payment-flow.png)
-Seamless checkout experience with card validation
 
-✅ Success Page
-![Payment Success](C:\Users\monic\Downloads\Stripe Payment Gateway\Screenshots\success-page.png)
-Instant confirmation with downloadable receipt
+⚠️ Never commit your Stripe secret key
 
-⚙️ Admin Panel
-![Admin Dashboard](C:\Users\monic\Downloads\Stripe Payment Gateway\Screenshots\admin-panel.png)
-Complete control over transactions and refunds
+▶️ Run the Project
+node server.js
 
-💡 Innovative Features Implemented
-1. Smart Retry Logic
-Automatic payment retry for failed transactions
 
-Intelligent error handling with user-friendly messages
+Open your browser:
 
-2. Dynamic Currency Conversion
-Auto-detects customer location
+http://localhost:4242
 
-Converts prices to local currency
+🧪 Test Card Details (Stripe)
+Field	Value
+Card Number	4242 4242 4242 4242
+Expiry Date	Any future date
+CVV	Any 3 digits
+ZIP	Any
+📊 Stripe Dashboard
 
-Supports 135+ currencies
+View test payments here:
+👉 https://dashboard.stripe.com/test/payments
 
-3. Fraud Detection Integration
-Built-in Stripe Radar protection
+🔐 Security Best Practices
 
-Custom rule engine for suspicious transactions
+✔ API keys stored using environment variables
 
-Automated hold system for high-risk payments
+✔ Payment logic handled only on backend
 
-4. Subscription Management
-Recurring billing setup
+✔ Stripe-hosted checkout ensures PCI compliance
 
-Proration handling
+🎯 Use Cases
 
-Customer portal for self-service
+E-commerce checkout
 
-5. Analytics Dashboard
-Revenue tracking
+Subscription systems
 
-Customer lifetime value
+Event ticket booking
 
-Payment method distribution
+SaaS payment gateway
 
-Failed payment analysis
-
-🔧 API Endpoints
-Method	Endpoint	Description
-POST	/create-payment-intent	Creates payment intent
-POST	/webhook	Handles Stripe webhooks
-GET	/transactions	Retrieves all transactions
-POST	/refund	Processes refunds
-GET	/dashboard-stats	Returns dashboard metrics
-📊 Sample Payment Object
-json
-{
-  "paymentIntent": {
-    "id": "pi_3Lx2ZaGd4y6I2p0Q1...",
-    "amount": 1999,
-    "currency": "usd",
-    "status": "succeeded",
-    "customer": "cus_NffrFeUfNV2E",
-    "payment_method": "pm_1Lx2ZZGd4y6I2p0Q...",
-    "created": 1678901234,
-    "receipt_url": "https://pay.stripe.com/receipts/..."
-  }
-}
-🌐 Webhook Events Handled
-payment_intent.succeeded
-
-payment_intent.payment_failed
-
-charge.refunded
-
-customer.subscription.created
-
-invoice.payment_succeeded
-
-🛡️ Security Features
-HTTPS Enforcement – All connections secured
-
-API Key Rotation – Automatic key management
-
-XSS Protection – Input sanitization
-
-CSRF Tokens – Cross-site request forgery protection
-
-Rate Limiting – API abuse prevention
-
-PCI Compliance – Through Stripe.js
-
-🚀 Deployment
-Heroku
-bash
-heroku create your-app-name
-heroku config:set STRIPE_SECRET_KEY=your_key
-git push heroku main
-Vercel
-bash
-vercel
-vercel env add STRIPE_SECRET_KEY
-vercel --prod
-AWS Elastic Beanstalk
-bash
-eb init
-eb create stripe-payment-env
-eb deploy
-📱 Mobile Responsiveness
-Mobile-first design approach
-
-Touch-optimized payment buttons
-
-Native app-like experience with PWA support
-
-Offline capability for transaction history
-
-🔄 Continuous Integration
-yaml
-# Sample GitHub Actions workflow
-name: Deploy
-on: [push]
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - run: npm test
-  deploy:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - run: npm run deploy
-📈 Performance Metrics
-Page Load: < 2 seconds
-
-Payment Processing: < 3 seconds
-
-Uptime: 99.9%
-
-Success Rate: 99.5%
+Academic / resume projects
 
 🤝 Contributing
-Fork the repository
 
-Create your feature branch (git checkout -b feature/AmazingFeature)
+Pull requests are welcome.
+Feel free to fork and improve the project.
 
-Commit changes (git commit -m 'Add AmazingFeature')
+⭐ Support
 
-Push to branch (git push origin feature/AmazingFeature)
+If you like this project:
 
-Open a Pull Request
+⭐ Star the repo
 
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+🍴 Fork it
 
-👥 Acknowledgments
-Stripe for the robust payment API
-
-Express.js team for the backend framework
-
-Chart.js for dashboard visualizations
-
-All contributors who helped shape this project
-
-⭐ If you find this project helpful, please give it a star on GitHub!
+📢 Share it
