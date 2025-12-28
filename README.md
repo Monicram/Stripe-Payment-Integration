@@ -19,11 +19,11 @@
 
 ## ✨ Features
 
-✅ Secure **Stripe Checkout Session**  
-✅ Backend-only **secret key protection**  
+✅ Secure Stripe Checkout Session  
+✅ Backend-only secret key protection  
 ✅ Environment variable based configuration  
 ✅ Real-time payment tracking via Stripe Dashboard  
-✅ Simple frontend with HTML  
+✅ Simple frontend using HTML  
 ✅ Clean & minimal project structure  
 
 ---
@@ -53,51 +53,48 @@ Stripe-Payment-Integration/
 └── README.md          # Project documentation
 ⚙️ Setup Instructions
 1️⃣ Clone the Repository
+bash
+Copy code
 git clone https://github.com/Monicram/Stripe-Payment-Integration.git
 cd Stripe-Payment-Integration
-
 2️⃣ Install Dependencies
+bash
+Copy code
 npm install
-
 3️⃣ Add Environment Variables
-
 Create a .env file in the root directory:
 
+env
+Copy code
 STRIPE_SECRET_KEY=sk_test_your_secret_key_here
-
-
 ⚠️ Never commit your Stripe secret key
 
 ▶️ Run the Project
+bash
+Copy code
 node server.js
-
-
 Open your browser and visit:
 
+arduino
+Copy code
 http://localhost:4242
-
 🧪 Test Card Details (Stripe)
-
-Use these details for testing payments:
-
 Field	Value
 Card Number	4242 4242 4242 4242
 Expiry Date	Any future date
 CVV	Any 3 digits
 ZIP	Any
-📊 Stripe Dashboard
 
+📊 Stripe Dashboard
 Track all test transactions here:
 👉 https://dashboard.stripe.com/test/payments
 
 🔐 Security Best Practices
-
 ✔️ API keys stored using environment variables
 ✔️ Payment logic handled only on backend
-✔️ Stripe-hosted checkout for PCI compliance
+✔️ Stripe-hosted checkout ensures PCI compliance
 
 🎯 Use Cases
-
 E-commerce checkout
 
 Subscription systems
@@ -109,12 +106,10 @@ SaaS payment gateway
 Academic / resume projects
 
 🤝 Contributing
-
 Pull requests are welcome!
 Feel free to fork this repository and improve it.
 
 ⭐ Support
-
 If you found this helpful:
 
 ⭐ Star the repository
@@ -122,3 +117,4 @@ If you found this helpful:
 🍴 Fork it
 
 📢 Share it
+
