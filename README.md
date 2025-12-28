@@ -53,8 +53,10 @@ Stripe-Payment-Integration/
 └── README.md          # Project documentation
 
 
+---
 
-⚙️ Setup Instructions
+## ⚙️ Setup Instructions
+
 
 1️⃣ Clone the Repository
 
@@ -88,8 +90,9 @@ http://localhost:3000
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6d732465-ba25-4a21-b581-71096388d5a8" />
 
 
+---
 
-🧪 Test Card Details (Stripe)
+## 🧪 Test Card Details (Stripe)
 
 Field	Value
 
@@ -101,8 +104,9 @@ CVV	Any 3 digits
 
 ZIP	Any
 
+---
 
-📊 Stripe Dashboard
+## 📊 Stripe Dashboard
 
 View test payments here:
 
@@ -111,7 +115,9 @@ View test payments here:
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/91100878-8a7f-4155-8460-0f93388d5869" />
 
 
-🔐 Security Best Practices
+---
+
+## 🔐 Security Best Practices
 
 ✔ API keys stored using environment variables
 
@@ -119,7 +125,10 @@ View test payments here:
 
 ✔ Stripe-hosted checkout ensures PCI compliance
 
-🎯 Use Cases
+ 
+---
+
+## 🎯 Use Cases
 
 E-commerce checkout
 
@@ -131,17 +140,25 @@ SaaS payment gateway
 
 Academic / resume projects
 
-🤝 Contributing
+ 
+---
+
+## 🤝 Contributing
 
 Pull requests are welcome.
 
 Feel free to fork and improve the project.
 
-⭐ Support
+
+---
+
+## ⭐ Support
 
 If you like this project:
 
-⭐ Star the repo
+---
+
+## ⭐ Star the repo
 
 🍴 Fork it
 
