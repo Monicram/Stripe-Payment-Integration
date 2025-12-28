@@ -51,7 +51,7 @@ Stripe-Payment-Integration/
 ├── package-lock.json  # Dependency lock file
 ├── .gitignore         # Ignored files
 └── README.md          # Project documentation
-
+```bash
 
 ---
 
