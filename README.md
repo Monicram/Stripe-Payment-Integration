@@ -55,11 +55,15 @@ Stripe-Payment-Integration/
 
 
 ⚙️ Setup Instructions
+
 1️⃣ Clone the Repository
+
 git clone https://github.com/Monicram/Stripe-Payment-Integration.git
+
 cd Stripe-Payment-Integration
 
 2️⃣ Install Dependencies
+
 npm install
 
 3️⃣ Add Environment Variables
@@ -72,23 +76,36 @@ STRIPE_SECRET_KEY=sk_test_your_secret_key_here
 ⚠️ Never commit your Stripe secret key
 
 ▶️ Run the Project
+
 node server.js
 
 
 Open your browser:
 
+
 http://localhost:4242
 
+
 🧪 Test Card Details (Stripe)
+
 Field	Value
+
 Card Number	4242 4242 4242 4242
+
 Expiry Date	Any future date
+
 CVV	Any 3 digits
+
 ZIP	Any
+
+
 📊 Stripe Dashboard
 
 View test payments here:
+
 👉 https://dashboard.stripe.com/test/payments
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/91100878-8a7f-4155-8460-0f93388d5869" />
+
 
 🔐 Security Best Practices
 
@@ -113,6 +130,7 @@ Academic / resume projects
 🤝 Contributing
 
 Pull requests are welcome.
+
 Feel free to fork and improve the project.
 
 ⭐ Support
