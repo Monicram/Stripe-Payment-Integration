@@ -42,16 +42,23 @@
 
 ## 📁 Project Structure
 
-```bash
+
 Stripe-Payment-Integration/
+
 │
+
 ├── server.js          # Express backend & Stripe logic
+
 ├── index.html         # Frontend checkout page
+
 ├── package.json       # Dependencies & scripts
+
 ├── package-lock.json  # Dependency lock file
+
 ├── .gitignore         # Ignored files
+
 └── README.md          # Project documentation
-```bash
+
 
 ---
 
