@@ -83,7 +83,10 @@ node server.js
 Open your browser:
 
 
-http://localhost:4242
+http://localhost:3000
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6d732465-ba25-4a21-b581-71096388d5a8" />
+
 
 
 🧪 Test Card Details (Stripe)
@@ -103,7 +106,8 @@ ZIP	Any
 
 View test payments here:
 
-👉 https://dashboard.stripe.com/test/payments
+
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/91100878-8a7f-4155-8460-0f93388d5869" />
 
 
