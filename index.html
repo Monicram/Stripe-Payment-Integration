@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stripe Payment Demo</title>
+</head>
+<body>
+  <h2>Stripe Payment Demo</h2>
+  <button onclick="pay()">Pay $50</button>
+
+  <script>
+    async function pay() {
+      const response = await fetch("/pay", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ amount: 50 })
+      });
+
+      const data = await response.json();
+
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        alert("Stripe session creation failed");
+        console.error(data);
+      }
+    }
+  </script>
+</body>
+</html>
