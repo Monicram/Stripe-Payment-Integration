@@ -42,7 +42,7 @@
 
 ## 📁 Project Structure
 
-
+```bash
 Stripe-Payment-Integration/
 │
 ├── server.js          # Express backend & Stripe logic
