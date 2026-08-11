@@ -7,13 +7,20 @@ This project implements a **secure Stripe Checkout payment flow** using **Node.j
 ## Project Structure
 
 Stripe Payment Gateway/
+
 ├── .gitignore
+
 ├── index.html
+
 ├── package-lock.json
+
 ├── package.json
+
 ├── server.js
-└── Screenshots/
-└── dashboard.png
+
+  └── Screenshots/
+
+  └── dashboard.png
 
 markdown
 Copy code
